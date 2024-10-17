@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     //Khai báo các biến giao diện
-    EditText edtduonglich;
+    EditText txt_duonglich;
     Button btnchuyen;
     TextView txt_amlich;
 
@@ -26,14 +26,14 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         //Anh xa ID
-        edtduonglich = findViewById(R.id.edtduonglich);
+        txt_duonglich = findViewById(R.id.txt_duonglich);
         btnchuyen = findViewById(R.id.btnchuyen);
         txt_amlich = findViewById(R.id.txt_amlich);
         btnchuyen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String can ="", chi ="";
-                int namduong = Integer.parseInt(edtduonglich.getText().toString());
+                int namduong = Integer.parseInt(txt_duonglich.getText().toString());
                 switch (namduong%10){
                     case 0: can = "Canh"; break;
                     case 1: can = "Tân"; break;
@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 }
+                txt_amlich.setText(can + "" +chi);
 
             }
         }) ;
