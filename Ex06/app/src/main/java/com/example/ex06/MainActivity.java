@@ -1,5 +1,6 @@
 package com.example.ex06;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -82,8 +84,31 @@ public class MainActivity extends AppCompatActivity {
             sothich+=chkdoccode.getText()+"\n";
         String bosung = editBosung.getText()+"";
 
+        //Tạo Dialpg
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Thông tin cá nhân");
+        builder.setPositiveButton("Đóng", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
 
-        }
+            }
+        });
+        //Tạo nội dung
+        String msg=ten+"\n";
+        msg+= cmnd+"\n";
+        msg+=bang+"\n";
+        msg+=sothich;
+        msg+="—————————–\n";
+        msg+="Thông tin bổ sung:\n";
+        msg+=bosung+ "\n";
+        msg+="—————————–";
+        builder.setMessage(msg);//thiết lập nội dung
+        builder.create().show();//hiển thị Dialog
+
+
+
+    }
 
     }
 }
