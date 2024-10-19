@@ -108,7 +108,28 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
     }
+    @Override
+    public void onBackPressed(){
+        //Tao Dialog
+        AlertDialog.Builder mydialog = new AlertDialog.Builder(MainActivity.this);
+        mydialog.setTitle("Question");
+        mydialog.setMessage("Are you sure want to exit?");
+        mydialog.setIcon(R.drawable.inform);
+        mydialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                finish(); //Thoat ung dung
+            }
+        });
+        mydialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+            }
+        });
+
 
     }
 }
