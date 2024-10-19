@@ -34,7 +34,7 @@
                 android:text="Họ tên" />
 
             <EditText
-                android:id="@+id/edtHoten"
+                android:id="@+id/edtten"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_span="2"
@@ -54,7 +54,7 @@
                 android:text="CMND" />
 
             <EditText
-                android:id="@+id/edtCMND"
+                android:id="@+id/edtcmnd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_span="2"
@@ -118,21 +118,21 @@
         android:orientation="horizontal">
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/chkdocbao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Đọc báo" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/chkdocsach"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Đọc sách" />
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/chkcode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -140,7 +140,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/edtbosung"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#3F51B5"
@@ -151,7 +151,7 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/edtbosung"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minLines="6"
@@ -160,7 +160,7 @@
         android:text="" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnsend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/black"
