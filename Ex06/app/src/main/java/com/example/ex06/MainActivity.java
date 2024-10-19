@@ -72,6 +72,16 @@ public class MainActivity extends AppCompatActivity {
         RadioButton rad = findViewById(id);
         bang=rad.getText()+"";
 
+        //Kiem tra so thich
+        String sothich = "";
+        if(chkdocbao.isChecked())
+            sothich+=chkdocbao.getText()+"\n";
+        if(chkdocsach.isChecked())
+            sothich+=chkdocsach.getText()+"\n";
+        if(chkdoccode.isChecked())
+            sothich+=chkdoccode.getText()+"\n";
+        String bosung = editBosung.getText()+"";
+
 
         }
 
