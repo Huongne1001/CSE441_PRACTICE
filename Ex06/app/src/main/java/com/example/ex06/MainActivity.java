@@ -1,10 +1,12 @@
 package com.example.ex06;
 
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -57,7 +59,19 @@ public class MainActivity extends AppCompatActivity {
             editCMND.selectAll();
             Toast.makeText(this, "CMND phải đúng 9 kí tự", Toast.LENGTH_LONG).show();
             return;
+
         }
+        //Kiểm tra bằng cap
+        String bang ="";
+        group = findViewById(R.id.idgruop);
+        int id = group.getCheckedRadioButtonId();//Trả về id
+        if(id ==-1) {
+            Toast.makeText(this, "Phải chọn bằng cấp", Toast.LENGTH_LONG).show();
+            return;
+        }
+        RadioButton rad = findViewById(id);
+        bang=rad.getText()+"";
+
 
         }
 
