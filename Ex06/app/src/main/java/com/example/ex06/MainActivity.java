@@ -49,6 +49,17 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Tên phải >= 3 ký tự", Toast.LENGTH_LONG).show();
             return;
         }
+        //Kiểm tra CMND hợp lệ
+        String cmnd = editCMND.getText().toString();
+        cmnd = cmnd.trim();
+        if(cmnd.length()!=9) {
+            editCMND.requestFocus();
+            editCMND.selectAll();
+            Toast.makeText(this, "CMND phải đúng 9 kí tự", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        }
 
     }
 }
