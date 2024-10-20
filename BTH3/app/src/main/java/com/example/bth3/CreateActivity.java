@@ -44,16 +44,16 @@ public class CreateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create);
 
         // Khởi tạo các trường nhập
-        etStudentId = findViewById(R.id.);
+        etStudentId = findViewById(R.id.etStudentId);
         etFullName = findViewById(R.id.etFullName);
-        etBirthDate = findViewById(R.id.edtBirthDate);
-        etEmail = findViewById(R.id.edtEmail);
-        etGpa = findViewById(R.id.edtGpa);
+        etBirthDate = findViewById(R.id.etBirthDate);
+        etEmail = findViewById(R.id.etEmail);
+        etGpa = findViewById(R.id.etGpa);
         spnMajor = findViewById(R.id.spnMajor);
         btnSubmit = findViewById(R.id.btnSubmit);
         spnExpYear = findViewById(R.id.spnExpYear);
         radioGroupGender = findViewById(R.id.radioGroupGender);
-        spnAddr = findViewById(R.id.spnAdd);
+        spnAddr = findViewById(R.id.spnAddr);
 
         // Khởi tạo danh sách sinh viên
         studentList = new ArrayList<>();
@@ -203,5 +203,3 @@ public class CreateActivity extends AppCompatActivity {
 
 
 }
-
-
