@@ -6,69 +6,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Giải phương trình bậc 1"
-        android:textSize="24sp" />
+        android:text="Giải phương trình bậc 1" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center|start"
-            android:text="Nhập a:"
-            android:textSize="20sp" />
+            android:text="Nhập a:" />
 
         <EditText
-            android:id="@+id/edt_a"
+            android:id="@+id/edtA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="text" />
+            android:inputType="text"
+            android:text="" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center|start"
-            android:text="Nhập b:"
-            android:textSize="20sp" />
+            android:text="Nhập b:" />
 
         <EditText
-            android:id="@+id/edt_b"
+            android:id="@+id/edtB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="text" />
+            android:inputType="text"
+            android:text="" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_send"
-        android:layout_width="180dp"
-        android:layout_height="60dp"
+        android:id="@+id/btnKQ"
+        android:layout_width="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:text="Kết quả"
-        android:textSize="20sp" />
+        android:layout_height="wrap_content"
+        android:text="Kết quả" />
 </LinearLayout>
