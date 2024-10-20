@@ -12,24 +12,23 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nhập Link Website"
-        android:textAlignment="center"
-        android:textColor="#4CAF50"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:gravity="center"
+        android:textSize="24sp"
+        android:background="#53C3EB"
+        android:layout_marginTop="50sp"
+        android:text="Nhập link website" />
 
     <EditText
         android:id="@+id/edtlink"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text" />
+        android:inputType="text"
+        android:text="" />
 
     <Button
         android:id="@+id/btnopen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#B4B1B1"
-        android:text="SHOW WEB PAGE"
-        android:textColor="#000000" />
+        android:text="SHOW WEB PAGE" />
 </LinearLayout>
